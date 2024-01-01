@@ -1,0 +1,150 @@
+.locationCard {
+    width: 350px;
+    height: 120px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+}
+
+.locationImage {
+    border-radius: 18px;
+    border: 1px solid white;
+}
+
+.locationImage img {
+    border: 1px solid white;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.locationText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    gap: 8px;
+}
+
+.locationText h4 {
+    color: gray;
+}
+
+
+
+@media (max-width: 280px) {
+    .locationCard {
+        width: 300px;
+        height: 80px;
+        border-radius: 15px;
+    }
+
+    .locationImage {
+        border-radius: 12px;
+    }
+
+    .locationImage img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .locationText {
+        gap: 5px;
+    }
+
+
+    .locationText h4 {
+        font-size: 0.8rem;
+     }
+     
+ 
+
+}
+
+@media (min-width: 281px) and (max-width: 767px) {
+    .locationCard {
+        width: 320px;
+        height: 90px;
+        border-radius: 18px;
+    }
+
+    .locationImage {
+        border-radius: 13px;
+    }
+
+    .locationImage img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .locationText {
+        gap: 7px;
+    }
+
+
+
+    .locationText h4 {
+        font-size: 0.8rem;
+     }
+     
+ 
+
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .locationCard {
+        width: 330px;
+        height: 100px;
+        border-radius: 18px;
+    }
+
+    .locationImage {
+        border-radius: 16px;
+    }
+
+    .locationImage img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .locationText {
+        gap: 7px;
+    }
+
+    .locationText h4 {
+       font-size: 0.8rem;
+    }
+    
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .locationCard {
+        width: 340px;
+        height: 110px;
+        border-radius: 18px;
+    }
+
+    .locationImage {
+        border-radius: 16px;
+    }
+
+    .locationImage img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .locationText {
+        gap: 7px;
+    }
+
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {}

@@ -1,0 +1,112 @@
+#categories {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.categoryCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.categoriesDescription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+
+}
+
+.categoriesDescription h1 {
+    font-size: 2rem;
+
+    text-align: center;
+
+}
+
+.categoriesDescription p {
+    color: gray;
+}
+
+
+
+@media (max-width: 280px) {
+    #categories {
+        width: 100%;
+    }
+
+    .categoriesDescription {
+        width: 100%;
+    }
+
+    .categoriesDescription h1 {
+        font-size: 2.1rem;
+        display: flex;
+        text-align: center;
+
+    }
+
+   
+}
+
+
+
+
+@media (min-width: 281px) and (max-width: 767px) {
+    #categories {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .categoriesDescription {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .categoriesDescription h1 {
+        font-size: 2.3rem;
+        text-align: center;
+
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #categories {
+        width: 90%;
+        margin-top: 10px;
+
+    }
+
+    .categoriesDescription {
+        width: 100%;
+    }
+
+    .categoriesDescription h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+  
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #categories {
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {}

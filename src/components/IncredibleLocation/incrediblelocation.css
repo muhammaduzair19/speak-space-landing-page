@@ -1,0 +1,110 @@
+#locationTwo {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+
+.incredibleLocationDescription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    gap: 10px;
+    text-align: center;
+}
+
+.incredibleLocationDescription h1 {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.incredibleLocationDescription p {
+    color: gray;
+
+}
+
+.locationCards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+@media (max-width: 280px) {
+    #locationTwo {
+        width: 100%;
+    }
+
+    .incredibleLocationDescription h1 {
+        font-size: 2.1rem;
+        display: flex;
+        text-align: center;
+
+    }
+}
+
+@media (min-width: 281px) and (max-width: 767px) {
+    #locations {
+        padding: 10px 20px;
+        width: 90%;
+    }
+
+
+    .incredibleLocationDescription h1 {
+        font-size: 2.1rem;
+        display: flex;
+        text-align: center;
+
+    }
+
+    .locationCards {
+        gap: 5px;
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #locationTwo {
+        padding: 10px;
+        width: 100%;
+    }
+
+
+    .incredibleLocationDescription h1 {
+        font-size: 2.1rem;
+        display: flex;
+        text-align: center;
+
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #locationTwo {
+        padding: 10px;
+    }
+
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    #locationTwo {
+        padding: 30px 50px;
+    }
+}

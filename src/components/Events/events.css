@@ -1,0 +1,200 @@
+#events {
+    margin-top: 20px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.textSide {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: start;
+}
+
+.imageSide {
+    width: 50%;
+}
+
+.imageSide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nameSection {
+    display: flex;
+    gap: 10px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #460093;
+}
+
+.nameSection hr {
+    border: 2px solid #460093;
+}
+
+.headingSection h1 {
+    font-size: 3rem;
+}
+
+
+.descriptionSection p {
+    width: 100%;
+    font-size: 16px;
+    color: gray;
+    text-align: justify;
+}
+
+.downloadButtonsSection {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.downloadButtonsSection img {
+    width: 150px;
+}
+
+
+
+
+@media (max-width: 280px){
+    #events{
+        margin-top: 20px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .imageSide{
+        width: 100%;
+    }
+    .headingSection h1 {
+        font-size: 1.5rem;
+    }
+    .textSide{
+        width: 100%;
+    }
+        
+    .downloadButtonsSection img {
+        width: 100px;
+    }
+
+}
+
+@media (min-width: 281px) and (max-width: 767px) {
+    #events {
+        margin-top: 20px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .imageSide{
+        width: 100%;
+    }
+    .nameSection {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .textSide{
+        width: 100%;
+    }
+    
+ 
+    
+    .headingSection h1 {
+        font-size: 2rem;
+    }
+    
+    
+    .descriptionSection p {
+        font-size: 16px;
+        color: gray;
+        text-align: justify;
+    }
+    
+    .downloadButtonsSection {
+        width: 100%;
+    }
+    
+    .downloadButtonsSection img {
+        width: 120px;
+    }
+
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #events {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+    .textSide {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: start;
+    }
+
+
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #events {
+        margin-top: 10px;
+    }
+
+    .nameSection {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .nameSection hr {
+        border: 2px solid #460093;
+    }
+
+    .headingSection h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .descriptionSection p {
+        font-size: 16px;
+        color: gray;
+        text-align: justify;
+    }
+
+    .downloadButtonsSection {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .downloadButtonsSection img {
+        width: 150px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {}

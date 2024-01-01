@@ -1,0 +1,159 @@
+.venue-card {
+    min-width: 320px;
+    max-width: 320px;
+    display: flex;
+    height: 280px;
+    flex-direction: column;
+    background: red;
+    border: 1px solid blacks;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.venue-card-img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.venue-card-text {
+    padding: 10px;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.venue-card-text-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.venue-card-text-top span {
+    color: #FA6165;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.venue-card-text-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.venue-rates,
+.venue-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #7300F1;
+    font-size: 14px;
+}
+
+.person-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+    .venue-card {
+        max-width: 250px;
+        min-width: 250px;
+    }
+
+    .venue-rates,
+    .venue-location {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #7300F1;
+        font-size: 12px;
+    }
+
+    .venue-card-text {
+        padding: 7px;
+        width: 100%;
+        gap: 6px;
+    }
+
+}
+
+/* Extra Small Devices */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .venue-card {
+        max-width: 270px;
+        min-width: 270px;
+    }
+
+    .venue-rates,
+    .venue-location {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #7300F1;
+        font-size: 12px;
+    }
+
+    .venue-card-text {
+        padding: 7px;
+        width: 100%;
+        gap: 6px;
+    }
+
+
+}
+
+/* Smal Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .venue-card {
+        max-width: 290px;
+        min-width: 290px;
+    }
+
+    .venue-rates,
+    .venue-location {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #7300F1;
+        font-size: 14px;
+    }
+
+    .venue-card-text {
+        padding: 7px;
+        width: 100%;
+        gap: 6px;
+    }
+
+
+
+
+}
+
+/* Large Tablets || Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .venue-card {
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .venue-card-text {
+        padding: 7px;
+        width: 100%;
+        gap: 6px;
+    }
+
+
+}
+
+/* Desktops */
+@media (min-width:1200px) and (max-width:1440px) {}
