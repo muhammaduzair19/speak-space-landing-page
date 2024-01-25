@@ -1,0 +1,57 @@
+.mobileNav {
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 0px 40px;
+}
+
+.mobileNavItems {
+    width: 50%;
+    background-color: #FF4F00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobileNavItem {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-weight: 500;
+}
+
+.mobileNavLogo {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.mobileNavLogo img {
+    width: 100px;
+}
+
+.crossIcon {
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+
+@media (max-width: 410px) {
+    .mobileNavItems {
+        width: 100%;
+    }
+
+    .mobileNav{
+        padding: 0 20px;
+    }
+
+
+}

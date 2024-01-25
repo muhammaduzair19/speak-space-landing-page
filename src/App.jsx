@@ -1,30 +1,30 @@
 import { useState } from 'react'
 import './app.css'
-import Header from './components/Header/Header'
-import Home from './components/Home/Home'
-import Categories from './components/Categories/Categories'
-import Vendors from './components/Vendors/Vendors'
-import Locations from './components/Locations/Locations'
-import Events from './components/Events/Events';
-import IncredibleLocation from './components/IncredibleLocation/IncredibleLocation';
-import Footer from './components/Footer/Footer';
+
+import Home from './pages/Home/Home'
+import { Route, Routes } from 'react-router-dom'
+import Layout from './Layout/Layout'
+import About from './pages/About/About'
+import HowItWorks from './pages/HowItWorks/HowItWorks'
+import Contact from './pages/Contact/Contact'
+import Privacy from './pages/Privacy/Privacy'
 
 
 function App() {
 
   return (
-    <div className="main">
 
-      <Header />
-      <Home />
-      <Categories />
-      <Vendors />
-      <Locations />
-      <Events />
-      <IncredibleLocation />
-      <Footer />
 
-    </div>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/how-it-works' element={<HowItWorks />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/privacy-policy' element={<Privacy />} />
+      </Route>
+    </Routes>
+
 
   )
 }

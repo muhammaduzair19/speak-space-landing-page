@@ -9,3 +9,7 @@ body {
   height: 100vh;
   font-family: 'Inter';
 }
+
+::-webkit-scrollbar{
+  display: none;
+}

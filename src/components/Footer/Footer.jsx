@@ -4,12 +4,14 @@ import { FaRegCopyright } from 'react-icons/fa'
 import Logo from '../../assets/logo.png'
 import Google from '../../assets/googleplay.png'
 import Apple from '../../assets/applestore.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
         <div id="footer">
 
             <div className='innerDiv'>
+
                 <div className="footerTop">
 
                     <div className="descriptionAndLogo">
@@ -24,12 +26,12 @@ const Footer = () => {
 
                     <div className="socialMedia">
                         <h2>Social Media</h2>
-                        <p>Facebook</p>
-                        <p>Youtube</p>
-                        <p>Vimeo</p>
-                        <p>Twitter (X) </p>
-                        <p>LinkedIn</p>
-                        <p>Instagram</p>
+                        <a href="https://www.facebook.com/" target='_blank' >Facebook</a>
+                        <a href="https://www.youtube.com/" target='_blank' >Youtube</a>
+                        <a href="https://vimeo.com/" target='_blank' >Vimeo</a>
+                        <a href="https://www.x.com/" target='_blank' >Twitter</a>
+                        <a href="https://www.linkedin.com/" target='_blank' >LinkedIn</a>
+                        <a href="https://www.instagram.com/" target='_blank' >Instagram</a>
                     </div>
 
 
@@ -45,13 +47,19 @@ const Footer = () => {
 
 
                 <div className="footerBottom">
+                    <Link
+                        to={'privacy-policy'}
+                        style={{ color: 'white' }}>
+
+                        Privacy Policy
+                    </Link>
                     <p>
                         <span>
                             <FaRegCopyright />
                         </span>
                         Seak Spaces, 2023
                     </p>
-                    <p>Terms and Conditions</p>
+
                 </div>
 
             </div>

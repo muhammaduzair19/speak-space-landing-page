@@ -2,9 +2,9 @@ import React from 'react'
 import Google from '../../assets/googleplay.png'
 import Phone from '../../assets/mobileimage.png'
 import Apple from '../../assets/applestore.png'
-import './home.css'
+import './hero.css'
 
-const Home = () => {
+const Hero = () => {
     return (
         <div id="home">
             <div className="downloadButtons">
@@ -22,4 +22,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Hero

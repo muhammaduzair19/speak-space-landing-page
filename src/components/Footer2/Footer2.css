@@ -1,0 +1,27 @@
+#footerContainer {
+    width: 100%;
+    background: #000;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    align-items: center;
+}
+
+.footer2 {
+    width: 80%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+@media (max-width: 530px) {
+    .footer2 {
+        font-size: 14px;
+
+    }
+}

@@ -1,4 +1,4 @@
-#home {
+#hero {
     width: 75%;
     min-height: 100vh;
     margin-top: -120px;
@@ -31,7 +31,7 @@
 
 
 @media (max-width: 280px) {
-    #home {
+    #hero {
         margin-top: -90px;
         width: 100%;
     }
@@ -45,7 +45,7 @@
 
 
 @media (min-width: 281px) and (max-width: 767px) {
-    #home {
+    #hero {
         margin-top: -100px;
         width: 100%;
     }
@@ -56,7 +56,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    #home {
+    #hero {
         margin-top: -110px;
         width: 90%;
     }
