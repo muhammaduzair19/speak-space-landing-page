@@ -5,8 +5,11 @@ import Logo from '../../assets/logo.png'
 import Google from '../../assets/googleplay.png'
 import Apple from '../../assets/applestore.png'
 import { Link } from 'react-router-dom'
+import { useContextProvider } from '../../context'
 
 const Footer = () => {
+    const { setSelected } = useContextProvider();
+
     return (
         <div id="footer">
 
@@ -49,7 +52,9 @@ const Footer = () => {
                 <div className="footerBottom">
                     <Link
                         to={'privacy-policy'}
-                        style={{ color: 'white' }}>
+                        style={{ color: 'white' }}
+                        onClick={() => setSelected('')}
+                    >
 
                         Privacy Policy
                     </Link>

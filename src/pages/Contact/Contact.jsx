@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './contact.css'
 import Typing from '../../assets/typing.png'
 import Phone from '../../assets/phone.png'
@@ -7,8 +7,22 @@ import Email from '../../assets/email.png'
 import Clock from '../../assets/clock.png'
 import Side from '../../assets/contactSide.png'
 import ContactForm from '../../components/ContactForm/ContactForm'
+import { Link, animateScroll as scroll } from 'react-scroll'
+
 
 const Contact = () => {
+
+
+  const options = {
+    duration: 300,
+    smooth: true,
+  };
+  useEffect(() => {
+    scroll.scrollToTop(options);
+  }, [])
+
+
+
   return (
     <div id='contactContainer' >
       <div id="contact">

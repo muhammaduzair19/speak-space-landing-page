@@ -1,86 +1,193 @@
 #privacy {
+    padding: 40px 0;
     width: 80%;
-    margin: 20px 0px;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    align-items: start;
+    gap: 40px;
 }
 
-.pageImage {
-    width: 400px;
+.badge {
+    padding: 10px 30px;
+    background: #7300F1;
+    border-radius: 50px;
+    color: white;
+    font-size: 12px;
 }
 
-.pageImage img {
+.text {
+    color: #6D6D6D;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.lightText {
+    color: #7171717d;
+}
+
+.summary h2 {
+    color: black;
+}
+
+
+.information {
+    height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.howText {
-    width: 100%;
+
+.questions {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.questions ol {
+    display: flex;
+    padding: 0px 15px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ques {
+    color: black;
+    text-align: justify;
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.answers {
+    flex: 3;
+
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.answers h2 {
+    text-transform: uppercase;
+}
+
+
+.link {
+    color: #FF4F00;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main-answer ul {
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
 
-.howText p {
-    text-align: center;
+
+.answer {
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.answer h3 {
+    color: black;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+.table th {
+    width: 30%;
+    background: #e4e3e3;
+    text-align: left;
+    padding: 5px;
+}
+
+
+
+.table th,
+td {
+    border: 1px solid #AAA9A9;
+}
+
+.table td {
+    padding: 5px;
+}
+
 
 
 
 @media (max-width: 350px) {
-    #howItWorks {
-        width: 95%;
+    #privacy {
+        width: 100%;
+        padding: 0px 10px;
+        gap: 40px;
+    }
+
+    .information {
+        flex-direction: column;
+        gap: 50px;
     }
 
 
-    .pageImage {
-        width: 250px;
+
+    .td {
+        font-size: 12px;
     }
-
-    .howText p {
-        font-size: 14px;
-    }
-
-
 }
 
-@media (min-width: 350px) and (max-width: 520px) {
-    #howItWorks {
+@media (min-width: 350px) and (max-width: 820px) {
+    #privacy {
         width: 95%;
-
+        gap: 40px;
     }
 
-    .pageImage {
-        width: 350px;
+    .information {
+        flex-direction: column;
+        gap: 50px;
     }
 
-    .howText p {
-        font-size: 14px;
+    .td {
+        font-size: 12px;
     }
-
-
-
-
-
 }
 
-@media (min-width: 520px) and (max-width: 991px) {
+@media (min-width: 820px) and (max-width: 991px) {
+    #privacy {
+        width: 90%;
+        gap: 40px;
+    }
+}
 
-    #howItWorks {
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #privacy {
         width: 85%;
-
+        gap: 40px;
     }
-
-    .pageImage {
-        width: 400px;
-    }
-
 
 }
-
-@media (min-width: 992px) and (max-width: 1199px) {}
 
 @media (min-width: 1200px) and (max-width: 1400px) {}

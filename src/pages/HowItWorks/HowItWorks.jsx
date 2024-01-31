@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './howItWorks.css'
 import ComingSoon from '../../assets/comingSoon.png'
+import { animateScroll as scroll } from 'react-scroll'
 
 const HowItWorks = () => {
+
+  const options = {
+    duration: 300,
+    smooth: true,
+  };
+  useEffect(() => {
+    scroll.scrollToTop(options);
+  }, [])
+
+
+
   return (
     <div id='howItWorks'>
 

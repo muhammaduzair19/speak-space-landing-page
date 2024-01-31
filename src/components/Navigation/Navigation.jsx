@@ -3,10 +3,10 @@ import './navigation.css'
 import Logo from '../../assets/colorLogo.png'
 import { Link } from 'react-router-dom'
 import MobileNav from '../MobileNav/MobileNav';
+import { useContextProvider } from '../../context.jsx';
 
 const Navigation = () => {
-    const [selected, setSelected] = useState('Home')
-
+    const { selected, setSelected } = useContextProvider();
 
     return (
         <div className="navContainer">

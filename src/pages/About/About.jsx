@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AboutImage from '../../assets/aboutImage.png'
 import './about.css'
+import { Link, animateScroll as scroll } from 'react-scroll'
+
 
 const About = () => {
+
+
+  const options = {
+    duration: 300,
+    smooth: true,
+  };
+  useEffect(() => {
+    scroll.scrollToTop(options);
+  }, [])
+
+
   return (
     <div id='about'>
 
