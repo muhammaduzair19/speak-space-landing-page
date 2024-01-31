@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { SlMenu } from "react-icons/sl";
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/colorLogo.png'
+import Logo from '../../assets/colorlogo.png'
 import './mobileNav.css'
 import { motion } from "framer-motion"
 import { IoMdClose } from 'react-icons/io'
