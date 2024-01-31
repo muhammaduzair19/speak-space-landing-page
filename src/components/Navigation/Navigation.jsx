@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './navigation.css'
-import Logo from '../../assets/colorLogo.png'
+import Logo from '../../assets/colorlogo.png'
 import { Link } from 'react-router-dom'
 import MobileNav from '../MobileNav/MobileNav';
 import { useContextProvider } from '../../context.jsx';
